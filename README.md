@@ -37,6 +37,17 @@ Welcome to my personal portfolio website! This project highlights my work in app
     npm run dev
     ```
 
+## Build and Deploy after editing
+
+1. Rebuild the project
+    ```bash
+    npm run build
+    ```
+2. Deploy to GitHub Pages
+   ```bash
+    npm run deploy
+    ```
+
 ## License
 
 This project is licensed under the MIT License.
