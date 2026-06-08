@@ -1,31 +1,24 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
+
+const navItems = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'expertise', label: 'Expertise' },
+  { id: 'portfolio', label: 'Projects' },
+  { id: 'contact', label: 'Contact' },
+];
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
-  const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'services', label: 'Services' },
-    { id: 'portfolio', label: 'Portfolio' },
-    { id: 'contact', label: 'Contact' },
-  ];
-
   useEffect(() => {
     const handleScroll = () => {
-      // Update navbar style based on scroll position
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
 
-      // Update active section based on scroll position
-      const sections = navItems.map(item => document.getElementById(item.id));
+      const sections = navItems.map((item) => document.getElementById(item.id));
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section, index) => {
@@ -39,6 +32,7 @@ const Navigation = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -52,21 +46,26 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'bg-slate-900/90 backdrop-blur-md shadow-lg shadow-slate-900/20' 
+      scrolled
+        ? 'bg-slate-900/90 backdrop-blur-md shadow-lg shadow-slate-900/20'
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <span className={`text-xl font-bold transition-all duration-300 ${
-              scrolled 
-                ? 'text-white' 
-                : 'text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400'
-            }`}>Nimesh Gamage</span>
+            <button
+              type="button"
+              onClick={() => scrollToSection('home')}
+              className={`text-left text-xl font-bold transition-all duration-300 ${
+                scrolled
+                  ? 'text-white'
+                  : 'text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400'
+              }`}
+            >
+              Nimesh Gamage
+            </button>
           </div>
-          
-          {/* Desktop Navigation */}
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-1">
               {navItems.map((item) => (
@@ -88,17 +87,15 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* CTA Button (visible on desktop) */}
           <div className="hidden md:block">
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 text-sm font-medium"
             >
-              Let's Talk
+              Let&apos;s Talk
             </button>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -112,7 +109,6 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation - Enhanced */}
       {isOpen && (
         <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800/50 animate-fade-in">
           <div className="px-4 pt-4 pb-6 space-y-2">
@@ -129,14 +125,13 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            
-            {/* Mobile CTA */}
+
             <div className="pt-4 mt-4 border-t border-slate-800/50">
-              <button 
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg shadow-lg font-medium"
               >
-                Let's Talk
+                Let&apos;s Talk
               </button>
             </div>
           </div>

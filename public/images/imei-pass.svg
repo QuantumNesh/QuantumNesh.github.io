@@ -1,0 +1,26 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" rx="48" fill="#0A0E17"/>
+  <rect x="36" y="36" width="1528" height="908" rx="40" fill="url(#bg)"/>
+  <rect x="524" y="90" width="552" height="800" rx="56" fill="#09111D" stroke="#2F455E" stroke-width="8"/>
+  <rect x="564" y="150" width="472" height="120" rx="28" fill="#101D31"/>
+  <rect x="592" y="188" width="300" height="30" rx="15" fill="#F5FBFF"/>
+  <rect x="592" y="236" width="380" height="16" rx="8" fill="#94C1E7" fill-opacity="0.6"/>
+  <rect x="592" y="318" width="416" height="250" rx="30" fill="#0E2037" stroke="#35597D"/>
+  <rect x="626" y="360" width="184" height="18" rx="9" fill="#9FC9EC" fill-opacity="0.66"/>
+  <rect x="626" y="410" width="330" height="70" rx="22" fill="#F8FBFF"/>
+  <rect x="626" y="512" width="330" height="62" rx="22" fill="#3E8FFF"/>
+  <rect x="592" y="620" width="416" height="160" rx="30" fill="#0E2037" stroke="#35597D"/>
+  <rect x="120" y="170" width="300" height="220" rx="34" fill="#0F1D31" stroke="#2E4764"/>
+  <rect x="1180" y="520" width="300" height="220" rx="34" fill="#0F1D31" stroke="#2E4764"/>
+  <circle cx="270" cy="280" r="56" fill="#162E4A"/>
+  <circle cx="1330" cy="630" r="56" fill="#162E4A"/>
+  <text x="120" y="824" fill="#F8FBFF" font-size="82" font-family="Segoe UI, Arial, sans-serif" font-weight="700">IMEI Password Generator</text>
+  <text x="120" y="886" fill="#A4C6E8" font-size="34" font-family="Segoe UI, Arial, sans-serif">A mobile-first technical utility focused on validation, API calls, and clean support workflows</text>
+  <defs>
+    <linearGradient id="bg" x1="36" y1="36" x2="1564" y2="944" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1320"/>
+      <stop offset="0.5" stop-color="#102741"/>
+      <stop offset="1" stop-color="#0A111A"/>
+    </linearGradient>
+  </defs>
+</svg>

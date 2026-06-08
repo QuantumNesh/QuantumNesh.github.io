@@ -1,46 +1,41 @@
-# AI Automotive Vision Portfolio
+# Nimesh Gamage Portfolio
 
-Welcome to my personal portfolio website! This project highlights my work in applying AI and computer vision to the automotive industry. It serves as a showcase of my skills and projects, and is hosted on GitHub Pages.
+This repository contains the source for my personal portfolio website. It presents a hybrid technical profile built around automotive diagnostics, software delivery, automation, and data-focused product work.
 
-## Features
+## Stack
 
-- Vehicle detection and classification
-- License plate recognition
-- Driver monitoring systems
-- Lane and traffic sign detection
-- Real-time video processing demos
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- React Router
+- EmailJS
 
-## Technologies Used
+## Site Content
 
-- Python
-- OpenCV
-- TensorFlow / PyTorch
-- Streamlit (for interactive demos)
-- Jupyter Notebooks
+- Hybrid profile and technical positioning
+- BYD, Mercedes-Benz, and broader diagnostics background
+- Diploma of Information Technology and selected certifications
+- Featured projects including CV Builder, Bid Base, IMEI Password Generator, Grays vehicle data tooling, and EV PreDiag
+- Privacy-safe public contact section
 
-## Getting Started
+## Local Development
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/QuantumNesh/QuantumNesh.github.io.git
-    ```
-2. Navigate to the project directory.
-    ```bash
-    cd ai-automotive-vision-portfolio
-    ```
-3. Install dependencies:
-    ```bash
-    npm i
-    ```
-4. Start the development server with auto-reloading and an instant preview.
-    ```bash
-    npm run dev
-    ```
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Build the production output:
+   ```bash
+   npm run build
+   ```
 
-## License
-
-This project is licensed under the MIT License.
+The build includes a cross-platform postbuild step that creates `dist/404.html` and copies the Google site verification file for GitHub Pages deployment.
 
 ## Contact
 
-For questions, collaboration, or feedback, please open an issue or contact me at [77nimesh@gmail.com](mailto:77nimesh@gmail.com).
+For collaboration or role discussions, contact [nimesh.gamage@outlook.com](mailto:nimesh.gamage@outlook.com).

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Linkedin, Github, Mail, Heart } from 'lucide-react';
+import { Linkedin, Github, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,60 +7,66 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/nimeshgamage",
-      label: "LinkedIn"
+      href: 'https://linkedin.com/in/nimeshgamage',
+      label: 'LinkedIn',
     },
     {
       icon: Github,
-      href: "https://github.com/77nimesh",
-      label: "GitHub"
+      href: 'https://github.com/77nimesh',
+      label: 'GitHub',
     },
     {
       icon: Mail,
-      href: "mailto:77nime@gmail.com",
-      label: "Email"
-    }
+      href: 'mailto:nimesh.gamage@outlook.com',
+      label: 'Email',
+    },
+  ];
+
+  const quickLinks = [
+    { label: 'Home', href: '#home' },
+    { label: 'About', href: '#about' },
+    { label: 'Expertise', href: '#expertise' },
+    { label: 'Projects', href: '#portfolio' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   return (
     <footer className="bg-slate-950 border-t border-slate-800/50 relative overflow-hidden">
-      {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_70%,rgba(59,130,246,0.03),transparent_30%)]"></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
-          {/* Logo/Brand */}
           <div className="text-center md:text-left space-y-4">
             <div className="mb-4">
               <div className="flex items-center space-x-4">
-                <img src="/images/ng-logo.png"  
-                alt="NG Logo"
-                className="w-24 h-24 object-contain bg-slate-950 p-2 rounded-xl shadow-inner opacity-100" />
+                <img
+                  src="/images/ng-logo.png"
+                  alt="NG Logo"
+                  className="w-24 h-24 object-contain bg-slate-950 p-2 rounded-xl shadow-inner opacity-100"
+                />
                 <div>
                   <h3 className="text-2xl font-bold text-gray-300 inline-flex items-center">Nimesh Gamage</h3>
-                  <p className="text-gray-400 text-sm">AI meets Automotive Precision</p>
+                  <p className="text-gray-400 text-sm">Automotive diagnostics, software, and data-driven product work</p>
                 </div>
               </div>
             </div>
-            
-            {/* Quick navigation */}
+
             <div className="flex flex-wrap justify-center md:justify-start gap-6 text-sm">
-              {['Home', 'About', 'Services', 'Portfolio', 'Contact'].map((item) => (
+              {quickLinks.map((item) => (
                 <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.label}
+                  href={item.href}
                   className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                 >
-                  {item}
+                  {item.label}
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Social Links */}
           <div className="flex space-x-5">
             {socialLinks.map((link, index) => (
               <a
@@ -78,13 +83,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="mt-16 pt-8 border-t border-slate-800/50 text-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} Nimesh Gamage. All rights reserved.
+            &copy; {currentYear} Nimesh Gamage. All rights reserved.
           </p>
-          <p className="text-gray-600 text-xs mt-2 flex items-center justify-center">
-            Made with <Heart className="w-3 h-3 mx-1 text-red-500 animate-pulse" /> and modern tech
+          <p className="text-gray-600 text-xs mt-2">
+            Built with React, TypeScript, and a strong respect for practical systems.
           </p>
         </div>
       </div>

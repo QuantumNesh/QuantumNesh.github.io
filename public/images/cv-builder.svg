@@ -1,0 +1,31 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" rx="48" fill="#07111F"/>
+  <rect x="36" y="36" width="1528" height="908" rx="40" fill="url(#bg)"/>
+  <rect x="90" y="110" width="520" height="760" rx="32" fill="#0B1730" stroke="#284A78"/>
+  <rect x="650" y="110" width="860" height="760" rx="32" fill="#091423" stroke="#284A78"/>
+  <rect x="124" y="154" width="170" height="24" rx="12" fill="#163357"/>
+  <rect x="124" y="214" width="336" height="30" rx="15" fill="#DDF7F6"/>
+  <rect x="124" y="268" width="260" height="16" rx="8" fill="#72D8D4" fill-opacity="0.7"/>
+  <rect x="124" y="338" width="180" height="18" rx="9" fill="#2D5D8C"/>
+  <rect x="124" y="372" width="332" height="14" rx="7" fill="#A7C4E6" fill-opacity="0.65"/>
+  <rect x="124" y="412" width="282" height="14" rx="7" fill="#A7C4E6" fill-opacity="0.5"/>
+  <rect x="124" y="472" width="190" height="18" rx="9" fill="#2D5D8C"/>
+  <rect x="124" y="506" width="300" height="14" rx="7" fill="#A7C4E6" fill-opacity="0.65"/>
+  <rect x="124" y="546" width="272" height="14" rx="7" fill="#A7C4E6" fill-opacity="0.5"/>
+  <rect x="700" y="154" width="180" height="26" rx="13" fill="#13395C"/>
+  <rect x="700" y="210" width="458" height="56" rx="24" fill="#F3FBFF"/>
+  <rect x="700" y="290" width="540" height="18" rx="9" fill="#8AB9E3" fill-opacity="0.7"/>
+  <rect x="700" y="330" width="496" height="18" rx="9" fill="#8AB9E3" fill-opacity="0.48"/>
+  <rect x="700" y="420" width="356" height="180" rx="28" fill="#0E2038" stroke="#31577E"/>
+  <rect x="1086" y="420" width="356" height="180" rx="28" fill="#0E2038" stroke="#31577E"/>
+  <rect x="700" y="630" width="742" height="190" rx="28" fill="#0E2038" stroke="#31577E"/>
+  <text x="124" y="720" fill="#F7FCFF" font-size="88" font-family="Segoe UI, Arial, sans-serif" font-weight="700">CV Builder</text>
+  <text x="124" y="788" fill="#A2C7ED" font-size="34" font-family="Segoe UI, Arial, sans-serif">Privacy-first resume editing with live preview and template workflows</text>
+  <defs>
+    <linearGradient id="bg" x1="36" y1="36" x2="1564" y2="944" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1C34"/>
+      <stop offset="0.55" stop-color="#0E2747"/>
+      <stop offset="1" stop-color="#0D1A2C"/>
+    </linearGradient>
+  </defs>
+</svg>
