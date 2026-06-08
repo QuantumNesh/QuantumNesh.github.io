@@ -1,0 +1,31 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="980" rx="48" fill="#0A1220"/>
+  <rect x="36" y="36" width="1528" height="908" rx="40" fill="url(#bg)"/>
+  <rect x="94" y="118" width="1412" height="88" rx="28" fill="#101B2D" stroke="#31465F"/>
+  <rect x="128" y="148" width="170" height="28" rx="14" fill="#D6F7FF"/>
+  <rect x="1128" y="146" width="142" height="32" rx="16" fill="#1A3553"/>
+  <rect x="1288" y="146" width="176" height="32" rx="16" fill="#3E8FFF"/>
+  <rect x="94" y="242" width="808" height="610" rx="40" fill="#0B1626" stroke="#2B425D"/>
+  <rect x="944" y="242" width="562" height="290" rx="40" fill="#0B1626" stroke="#2B425D"/>
+  <rect x="944" y="562" width="270" height="290" rx="40" fill="#0B1626" stroke="#2B425D"/>
+  <rect x="1236" y="562" width="270" height="290" rx="40" fill="#0B1626" stroke="#2B425D"/>
+  <rect x="138" y="294" width="224" height="24" rx="12" fill="#19324D"/>
+  <rect x="138" y="354" width="442" height="64" rx="28" fill="#F8FBFF"/>
+  <rect x="138" y="448" width="518" height="18" rx="9" fill="#91B8DB" fill-opacity="0.74"/>
+  <rect x="138" y="488" width="470" height="18" rx="9" fill="#91B8DB" fill-opacity="0.46"/>
+  <rect x="138" y="592" width="332" height="110" rx="28" fill="#0E233B" stroke="#365A80"/>
+  <rect x="500" y="592" width="332" height="110" rx="28" fill="#0E233B" stroke="#365A80"/>
+  <rect x="978" y="290" width="214" height="24" rx="12" fill="#163456"/>
+  <rect x="978" y="336" width="320" height="20" rx="10" fill="#CBE1F5"/>
+  <rect x="978" y="390" width="210" height="110" rx="26" fill="#12304E"/>
+  <rect x="1208" y="390" width="258" height="110" rx="26" fill="#0F2238"/>
+  <text x="138" y="774" fill="#F5FBFF" font-size="88" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Bid Base</text>
+  <text x="138" y="842" fill="#A6C6E8" font-size="34" font-family="Segoe UI, Arial, sans-serif">Vehicle auction intelligence, searchable market data, and product-ready platform thinking</text>
+  <defs>
+    <linearGradient id="bg" x1="36" y1="36" x2="1564" y2="944" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1A2B"/>
+      <stop offset="0.5" stop-color="#102B45"/>
+      <stop offset="1" stop-color="#0D1726"/>
+    </linearGradient>
+  </defs>
+</svg>
